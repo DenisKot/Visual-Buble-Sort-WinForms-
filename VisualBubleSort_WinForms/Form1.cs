@@ -39,6 +39,7 @@
                 var strArr = this.textBox.Text.Trim().Split(' ');
                 this.intArr = Array.ConvertAll(strArr, s => int.Parse(s));
 
+                //// Resize
                 this.Width = 5 + ButtonFactory.ButtonSize*this.intArr.Length > 600
                     ? ButtonFactory.ButtonSize * this.intArr.Length + 20
                     : 600;
